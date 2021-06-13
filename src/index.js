@@ -20,7 +20,7 @@ menuRef.insertAdjacentHTML('beforeend', menuMarkup);
 
 bodyTheme.classList.add(Theme.LIGHT);
 populateBodyTheme();
-keepCheckboxChecked();
+
 
 
 function onThemeToggleChange(event) {
@@ -36,10 +36,4 @@ function populateBodyTheme() {
     if (savedTheme) {
         bodyTheme.classList.value = savedTheme;
     }
-}
-
-function keepCheckboxChecked() {
-    if (bodyTheme.classList.contains(Theme.DARK)) {
-        themeToggle.checked = true;
-     }
 }
